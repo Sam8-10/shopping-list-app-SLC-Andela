@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Shopping List App-Sign Up Page</title>
+</head>
+<body>
+<style>
+
+
+.button[type=submit]{
+   padding:60px 30px;
+   box-shadow:2px;
+   text-align: left;
+   border-radius:45px;
+}
+div{
+   border-radius:8px;
+   background-color:lightgray;
+   padding:40px;
+}
+div#header{
+    background-color:black;
+    font-size:24px;
+    font-family:arial black;
+    font-color:white;
+
+}
+div#footer{
+    background-color:black;
+    font-size:14px;
+    font-family:arial black;
+    font-color:white;
+    padding:110px;
+}
+
+</style>
+
+<div id="header">
+  <center><b><font color="white"> Shopping List App<br /> Register or Log In to manage your lists</font></b></center>
+</div>
+
+
+<div>
+<form action="we.php" method="post">
+<br /><br />
+<center>
+<input type="text" id="Email" placeholder="Email" required/><br /><br />
+<input type="text" id="Username" placeholder="Username" required/><br /><br />    
+<input type="password" id="password" placeholder="Password" required/><br /><br />
+<input type="password"  id="Confirm password" placeholder="Confirm password" required /><br /><br />
+<button type="submit" value="create">Register</button><br /><br />
+<b>Already have an account?<br /><br />
+<button onclick="redirect('login.php');">Log In </button>
+</center>
+</div>
+<div id="footer">
+    <bottom><button><b><font color="Red">Terms and Conditions Apply</font></b></bottom></button>
+</div>
+<script type="text/javascript">
+    function Redirect(){
+     window.location='back.php';
+
+</script>
+</form> 
+</body>
+</html>
+
+
+
+
+
+
